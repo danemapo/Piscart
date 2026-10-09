@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Piscart",
+    "slug": "piscart",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "piscart",
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": {
+      "package": "com.picsartclone.app",
+      "versionCode": 1,
+      "permissions": ["READ_MEDIA_IMAGES", "READ_MEDIA_VIDEO"]
+    },
+    "plugins": [
+      ["expo-image-picker", {
+        "photosPermission": "Piscart needs photo access so you can edit your pictures.",
+        "cameraPermission": "Piscart uses the camera when you choose to take a photo."
+      }],
+      ["expo-media-library", {
+        "photosPermission": "Piscart needs access to save edited pictures.",
+        "savePhotosPermission": "Piscart saves your edited pictures to your gallery.",
+        "isAccessMediaLocationEnabled": false
+      }]
+    ]
+  }
+}
